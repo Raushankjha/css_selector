@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover Box</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content:space-between;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightgray;
+        display: inline-block;
+        
+      }
+
+      /* Target the third box for hover effect */
+      .box:nth-child(3):hover {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
